@@ -1,0 +1,302 @@
+html,
+body {
+    height: 100%;
+}
+
+.list-group-item i,
+.exercicio-wrapper h3 i,
+.nivel-wrapper h3 i,
+i.fa-trash {
+    float: right;
+    margin-top: 4px;
+    color: var(--bs-primary-rgb);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.list-group-item i:hover,
+.exercicio-wrapper h3 i:hover,
+.nivel-wrapper h3 i:hover,
+i.fa-trash:hover {
+    color: var(--bs-primary-rgb-hover);
+}
+
+.nivel-wrapper {
+    padding: 12px;
+    background: #b7e2ff;
+}
+
+.video-wrapper,
+.exercicio-wrapper {
+    margin: 0 24px;
+    margin-bottom: 12px;
+    padding: 24px;
+}
+
+.novo-exercicio-row {
+    padding: 24px;
+}
+
+.hide {
+    display: none !important;
+}
+
+#listagem-tutoriais .card a.btn {
+    color: white !important;
+}
+
+#listagem-tutoriais .card img {
+    object-fit: cover;
+}
+
+#listagem-tutoriais .card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#listagem-tutoriais .card i {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: transparent;
+    font-size: 35px;
+    -webkit-text-stroke: 2px var(--bs-primary-rgb);
+    transition: color .2s;
+    cursor: pointer;
+}
+
+#listagem-tutoriais .card i:first-child {
+    right: 62px;
+    color: white;
+}
+
+#listagem-tutoriais .card .tutorial-tags-wrapper {
+    margin-bottom: 12px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#listagem-tutoriais .card .tutorial-tags-wrapper .btn-outline-secondary {
+    color: #7b7b7b;
+    border-color: #7b7b7b;
+}
+
+#listagem-tutoriais .card .tutorial-tags-wrapper .btn-outline-secondary:hover,
+#listagem-tutoriais .card .tutorial-tags-wrapper .btn-outline-secondary:focus {
+    color: #191919;
+    border-color: #191919;
+}
+
+#listagem-tutoriais .card .tutorial-tags-wrapper .tutorial-tag {
+    margin-bottom: 12px;
+}
+
+#listagem-tutoriais .card .tutorial-tags-wrapper .tutorial-tag:not(:last-child) {
+    margin-right: 12px;
+}
+
+#listagem-tutoriais .card i:hover,
+#listagem-tutoriais .card i.active {
+    color: var(--bs-primary-rgb);
+}
+
+.navbar {
+    color: white;
+    line-height: 16px;
+}
+
+.modal-header {
+    background-color: var(--bs-primary-rgb);
+    color: white;
+    padding: 24px;
+}
+
+:root {
+    --bs-primary-rgb: #ff2173;
+    --bs-primary-rgb-hover: #c71c5b;
+}
+
+a.text-primary,
+a {
+    color: var(--bs-primary-rgb) !important;
+    transition: color .5s;
+    text-transform: uppercase;
+}
+
+a:hover,
+.text-primary:hover {
+    color: var(--bs-primary-rgb-hover) !important;
+}
+
+
+.btn-primary{
+    background-color: var(--bs-primary-rgb);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:visited {
+    background-color: var(--bs-primary-rgb-hover);
+}
+
+
+#btnFavoritos.active {
+    background-color: #ffa900 !important;
+}
+
+
+#tabelaGerirUtilizadores tr td i {
+    float: none;
+}
+
+#tabelaGerirUtilizadores tr th:nth-child(3),
+#tabelaGerirUtilizadores tr th:nth-child(4),
+#tabelaGerirUtilizadores tr td:nth-child(3),
+#tabelaGerirUtilizadores tr td:nth-child(4) {
+    text-align: center !important;
+}
+
+.jumbotron .container {
+    margin: 80px auto;
+}
+
+table.stats {
+    width: 100%;
+}
+
+table.stats thead i {
+    color: #44cce4;
+    font-size: 80px;
+}
+
+table.stats thead i.pontos {
+    color: #e4e444;
+}
+
+table.stats td,
+table.stats th {
+    text-align: center;
+    width: 50%;
+}
+
+.tutorial-titulo-wrapper {
+    display: flex;
+    background-color: rgba(0,0,0, .8);
+    padding: 24px;
+}
+
+.tutorial-titulo-wrapper .titulo-tutorial {
+    flex-grow: 1;
+}
+
+.tutorial-banner {
+    min-height: 250px;
+    color: white;
+    padding: 48px;
+    text-shadow: 2px 2px black;
+    margin-bottom: 24px;
+
+    background-color: #242b51;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tutorial-banner .nivel {
+    float: right;
+    font-size: 36px;
+    color: gold;
+    margin-top: 20px;
+}
+
+.tutorial-banner p {
+    background-color: rgb(112 107 134 / 80%);
+    padding: 12px 24px;
+    margin-bottom: 0;
+}
+
+.tutorial .tutorial-tags-wrapper {
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.tutorial .tutorial-tags-wrapper button:not(:last-child) {
+    margin-right: 12px;
+}
+
+.tutorial .introducao-tutorial {
+    font-size: 20px;
+    margin-bottom: 48px;
+}
+
+.tutorial .tutorial-video-wrapper {
+    width: calc(100% - 250px);
+}
+
+.tutorial .tutorial-video-wrapper .tutorial-video-placeholder {
+    width: 100%;
+}
+
+.tutorial .tutorial-video-wrapper video {
+    width: 100%;
+}
+
+.tutorial .tutorial-video-wrapper.com-etiquetas {
+    display: flex;
+    width: 100%;
+}
+
+.tutorial .tutorial-video-wrapper.com-etiquetas ul {
+    list-style: none;
+    max-height: 550px;
+    overflow: auto;
+}
+
+.tutorial .tutorial-video-wrapper.com-etiquetas ul li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.tutorial .exercicio.card {
+    background: #e7e7e7;
+    margin: 48px 0;
+    padding: 24px;
+}
+
+.tutorial .exercicio.card input[type="text"] {
+    border-radius: 6px;
+    border: transparent;
+    height: 40px;
+    font-size: 20px;
+    padding: 0 24px;
+    margin: 12px 0;
+}
+
+.tutorial .exercicio.card input[type="submit"] {
+    width: 150px;
+}
+
+.tutorial .exercicio.card select {
+    border-radius: 6px;
+    border: transparent;
+    height: 40px;
+    padding: 0 24px;
+    margin: 12px 0;
+}
+
+.tutorial .exercicio.card.escolha-multipla p {
+    font-size: 20px;
+}
+
+.tutorial-condluido {
+    position: absolute;
+    top: 120px;
+    background-color: gold;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}

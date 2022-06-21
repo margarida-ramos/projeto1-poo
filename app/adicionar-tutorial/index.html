@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EduVerse</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script type="text/javascript">
+      // Desativar conversão de <i> para <svg>
+      window.FontAwesomeConfig = { autoReplaceSvg: false };
+    </script>
+    <!-- REFERÊNCIA AO CSS DO BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+      integrity="sha512-vVHgbgU/NyGFUqtNaezlMZbhgOXqdK1USGWpiAJ8W/H262cLJDmGHHFwhFjptjDiumEWyFfGuMgNlIbFJjCfGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+
+  <body style="padding-top: 85px">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-md bg-dark fixed-top"></nav>
+
+    <!-- container principal -->
+    <div class="container-fluid">
+      <!--  jumbotron  qu neste exemplo contém titulos, formulário e cards -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3 js-criar-tutorial-titulo">Adicionar Tutorial</h1>
+          <p class="lead js-criar-tutorial-descricao">
+            Criar um novo tutorial composto por diversos níveis!
+          </p>
+          <hr class="my-2" />
+          <!-- catálogo - formulário -->
+          <form class="form-inline js-criar-tutorial-form">
+            <div class="form-group">
+              <label for="txtTitulo">Titulo</label>
+              <input
+                type="text"
+                required
+                min="3"
+                class="form-control"
+                id="txtTitulo"
+                placeholder="Título"
+              />
+            </div>
+            <div class="form-group">
+              <label for="txtDescricao">Descrição</label>
+              <input
+                type="text"
+                required
+                min="3"
+                class="form-control"
+                id="txtDescricao"
+                placeholder="Descrição"
+              />
+            </div>
+            <div class="form-group">
+              <label for="txtImagem">Imagem</label>
+              <input
+                type="text"
+                required
+                min="3"
+                class="form-control"
+                id="txtImagem"
+                placeholder="Imagem"
+              />
+            </div>
+
+            <div class="row justify-center">
+              <div class="col-12">
+                <label>Tags</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txtNovaTag"
+                    placeholder="Adiciona uma tag..."
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-info js-nova-tag"
+                      type="button"
+                      style="height: 100%"
+                    >
+                      Adicionar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <ul class="list-group tags-list-group"></ul>
+              </div>
+            </div>
+
+            <div class="nivel-container">
+              <div class="niveis-placeholder"></div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <button class="btn btn-primary js-add-nivel">Novo nível</button>
+              </div>
+            </div>
+            <hr class="my-2" />
+            <div class="row">
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-success js-btn-criar-tutorial"
+                >
+                  Criar Tutorial
+                </button>
+                <button class="btn btn-danger js-btn-remover-tutorial">
+                  Remover Tutorial
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Junbotron -->
+    </div>
+    <!--  Container principal -->
+
+    <!-- Modal de login -->
+    <div w3-include-html="/html/login.html"></div>
+
+    <!-- Modal de Registo -->
+    <div w3-include-html="/html/registar.html"></div>
+
+    <!-- Modal de Gestão de Utilizadores -->
+    <div w3-include-html="/html/gerirUtilizadores.html"></div>
+
+    <!-- Modal de Ranking -->
+    <div w3-include-html="/html/ranking.html"></div>
+
+    <!-- Modal de Perfil -->
+    <div w3-include-html="/html/perfil.html"></div>
+
+    <div class="toast-placeholder"></div>
+
+    <footer
+      class="text-center text-white"
+      style="
+        background-color: rgba(38, 38, 38, var(--mdb-bg-opacity)) !important;
+      "
+    >
+      <!-- Grid container -->
+      <div class="container p-4"></div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="
+          background-color: rgba(38, 38, 38, var(--mdb-bg-opacity)) !important;
+        "
+      >
+        © 2022 Copyright:
+        <a class="text-white" href="https://eduverse.com/">EduVerse.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- REFERÊNCIA AOS JS -->
+    <div class="scripts">
+      <script type="module" src="/js/init.js"></script>
+      <script type="module" src="/js/main.js"></script>
+      <script type="module" src="/js/views/NavbarView.js"></script>
+      <script type="module" src="/js/views/CriarTutorialView.js"></script>
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+        integrity="sha512-I5b3wbKXZ7B4m7MuVomjsVRgTG0tcrTR6nNy+RIvrk8LZdlNbJ8q5b5OxYWvUZ+rKBVAc2N0hbE1MIZERUuDhA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    </div>
+  </body>
+</html>

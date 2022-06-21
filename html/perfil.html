@@ -1,0 +1,133 @@
+<!-- Modal de Perfil -->
+<div
+  class="modal fade"
+  id="mdlPerfil"
+  tabindex="-1"
+  aria-labelledby="Perfil"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Perfil">Perfil</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline js-perfil-form">
+          <table class="stats">
+            <thead>
+              <tr>
+                <th>
+                  <i class="fa-solid fa-book-open"></i><br />Tutoriais
+                  Concluídos
+                </th>
+                <th><i class="fa-solid fa-trophy pontos"></i><br />Pontos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="js-tutoriais-concluidos">2</td>
+                <td class="js-pontos">3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="form-group">
+            <div class="container">
+              <div class="form-group">
+                <label for="txtNomeEdit">Nome</label>
+                <input
+                  type="text"
+                  required
+                  min="3"
+                  class="form-control"
+                  id="txtNomeEdit"
+                  placeholder="Nome"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtDataNascimentoEdit">Data de Nascimento</label>
+                <input
+                  type="date"
+                  required
+                  class="form-control"
+                  id="txtDataNascimentoEdit"
+                  placeholder="Data de Nascimento"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtSexoEdit">Sexo</label>
+                <input
+                  type="text"
+                  required
+                  min="3"
+                  class="form-control"
+                  id="txtSexoEdit"
+                  placeholder="Sexo"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtLocalidadeEdit">Localidade</label>
+                <input
+                  type="text"
+                  required
+                  min="3"
+                  class="form-control"
+                  id="txtLocalidadeEdit"
+                  placeholder="Localidade"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtEmailEdit">Email</label>
+                <input
+                  type="email"
+                  required
+                  min="3"
+                  class="form-control"
+                  id="txtEmailEdit"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtPasswordEdit">Password</label>
+                <input
+                  type="password"
+                  autocomplete="on"
+                  class="form-control"
+                  id="txtPasswordEdit"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtConfirmPasswordEdit">Confirm Password</label>
+                <input
+                  type="password"
+                  autocomplete="on"
+                  class="form-control"
+                  id="txtConfirmPasswordEdit"
+                  placeholder="Confirm Password"
+                />
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success js-btn-guardar">
+                  Guardar
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="msgPerfil"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module" src="/js/views/PerfilView.js"></script>

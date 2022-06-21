@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EduVerse</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script type="text/javascript">
+      // Desativar conversão de <i> para <svg>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: false,
+      };
+    </script>
+    <!-- REFERÊNCIA AO CSS DO BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+      integrity="sha512-vVHgbgU/NyGFUqtNaezlMZbhgOXqdK1USGWpiAJ8W/H262cLJDmGHHFwhFjptjDiumEWyFfGuMgNlIbFJjCfGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+
+  <body style="padding-top: 85px">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-md bg-dark fixed-top"></nav>
+
+    <!-- container principal -->
+    <div class="container-fluid">
+      <!--  jumbotron  -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container tutorial js-tutorial">
+          <div class="tutorial-banner js-tutorial-banner">
+            <h1 class="display-3 tutorial-titulo-wrapper">
+              <div class="titulo-tutorial js-titulo-tutorial"></div>
+              <div class="nivel js-nivel"></div>
+            </h1>
+            <p class="lead js-descricao-tutorial"></p>
+          </div>
+
+          <div class="tutorial-tags-wrapper js-tutorial-tags-wrapper"></div>
+
+          <p class="introducao-tutorial js-introducao-tutorial"></p>
+
+          <div class="tutorial-video-wrapper com-etiquetas">
+            <div
+              class="js-tutorial-video-placeholder tutorial-video-placeholder"
+            ></div>
+            <div class="etiquetas js-etiquetas"><ul></ul></div>
+          </div>
+
+          <div class="exercicio card js-exercicio-placeholder"></div>
+        </div>
+      </div>
+      <!-- Junbotron -->
+    </div>
+    <!--  Container principal -->
+
+    <!-- Modal de login -->
+    <div w3-include-html="/html/login.html"></div>
+
+    <!-- Modal de Registo -->
+    <div w3-include-html="/html/registar.html"></div>
+
+    <!-- Modal de Gestão de Utilizadores -->
+    <div w3-include-html="/html/gerirUtilizadores.html"></div>
+
+    <!-- Modal de Ranking -->
+    <div w3-include-html="/html/ranking.html"></div>
+
+    <!-- Modal de Perfil -->
+    <div w3-include-html="/html/perfil.html"></div>
+
+    <div class="toast-placeholder"></div>
+
+    <footer
+      class="text-center text-white"
+      style="
+        background-color: rgba(38, 38, 38, var(--mdb-bg-opacity)) !important;
+      "
+    >
+      <!-- Grid container -->
+      <div class="container p-4"></div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="
+          background-color: rgba(38, 38, 38, var(--mdb-bg-opacity)) !important;
+        "
+      >
+        © 2022 Copyright:
+        <a class="text-white" href="https://eduverse.com/">EduVerse.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- REFERÊNCIA AOS JS -->
+    <div class="scripts">
+      <script type="module" src="/js/init.js"></script>
+      <script type="module" src="/js/main.js"></script>
+      <script type="module" src="/js/views/NavbarView.js"></script>
+      <script type="module" src="/js/views/TutorialView.js"></script>
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+        integrity="sha512-I5b3wbKXZ7B4m7MuVomjsVRgTG0tcrTR6nNy+RIvrk8LZdlNbJ8q5b5OxYWvUZ+rKBVAc2N0hbE1MIZERUuDhA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    </div>
+  </body>
+</html>
