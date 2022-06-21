@@ -6,7 +6,7 @@ const updateFormulario = () => {
   if (user) {
     const form = document.querySelector('.js-perfil-form');
     form.querySelector('.js-pontos').innerHTML = user.getPontos();
-    form.querySelector('.js-tutoriais-concluidos').innerHTML = user.getTutoriaisConcluidos().length;
+    form.querySelector('.js-tutoriais-concluidos').innerHTML = Object.keys(user.getTutoriaisConcluidos()).length;
     form.querySelector('#txtNomeEdit').value = user.getNome();
     form.querySelector('#txtDataNascimentoEdit').value = user.getDataNascimento();
     form.querySelector('#txtSexoEdit').value = user.getSexo();
